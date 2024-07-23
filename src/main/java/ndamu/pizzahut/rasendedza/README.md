@@ -26,7 +26,7 @@ You are required to create an application that calculates the total amount a cus
 ## Installation
 1. **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/pizza-ordering-system.git](https://github.com/NdamuTm/PizzaHut.git)
+    git clone https://github.com/NdamuTm/PizzaHut.git
     ```
 2. **Navigate to the project directory:**
     ```bash
