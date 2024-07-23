@@ -1,0 +1,75 @@
+Start Program
+    Import Scanner class
+    Define main method
+        Initialize Scanner
+        Initialize toppings array with size 10
+        Initialize toppingCount to 0
+        
+        Display Menu for Toppings
+            Print "Enter topping >> "
+            Read topping and store in toppings[toppingCount]
+            Increment toppingCount
+
+        Loop to Get Toppings
+            While toppingCount < 10
+                Print "Enter topping or Q to quit >> "
+                Read topping
+                If topping equals "Q" (ignoring case), break loop
+                Store topping in toppings[toppingCount]
+                Increment toppingCount
+        
+        Create Pizza Object
+            Create Pizza object with toppings and toppingCount
+
+        Ask for Delivery
+            Print "Is this for delivery? Y or N >>"
+            Read delivery option
+
+        If Delivery is Required
+            If delivery option equals "Y" (ignoring case)
+                Print "Enter delivery address >> "
+                Read address
+                Create DeliveryPizza object with pizza and address
+                Print deliveryPizza object
+            Else
+                Print pizza object
+
+        End Program
+            Close Scanner
+End Program
+
+Pizza Class
+    Pizza Constructor
+        Initialize toppings array with given toppings
+        Copy toppings to toppings array
+
+    Calculate Price Method
+        Define toppingPrice as 2.0
+        Define basePrice as 14.0
+        Return basePrice + (toppingPrice * length of toppings)
+
+    ToString Method
+        Initialize StringBuilder
+        Append each topping to StringBuilder
+        Append calculated price to StringBuilder
+        Return StringBuilder as string
+
+DeliveryPizza Class (Subclass of Pizza)
+    DeliveryPizza Constructor
+        Call super constructor with toppings
+        Initialize address
+        Initialize deliveryFee by calling calculateDeliveryFee method
+
+    Calculate Delivery Fee Method
+        Get pizza price from super.calculatePrice()
+        If price > 18, return 3.0
+        Else, return 5.0
+
+    ToString Method
+        Call super.toString()
+        Append address and delivery fee to string
+        Return complete string
+
+
+
+// used a diffent style compared to my second project pseudocode i believe this is called a Detailed Pseudocode , can i also get a feedback on this one also
