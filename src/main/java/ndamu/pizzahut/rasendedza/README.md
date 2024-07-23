@@ -30,7 +30,7 @@ You are required to create an application that calculates the total amount a cus
     ```
 2. **Navigate to the project directory:**
     ```bash
-    cd pizza-ordering-system
+    cd PizzaHut
     ```
 3. **Compile the code:**
     ```bash
